@@ -1,6 +1,20 @@
 # Watcher of Friends Online
 
-[TODO. There will be project description]
+Script outputs to console your friends online in vk.com. Requires you to enter email and password.
+
+Example:
+
+```bash
+python3 vk_friends_online.py
+Enter email: your@email.com
+Enter password: yourpassword
+Waiting for vk to respond...
+
+Friends online:
+Eugene Poupkine
+Dana Mango
+Sergey Prokudin-Gorsky
+```
 
 # How to Install
 
