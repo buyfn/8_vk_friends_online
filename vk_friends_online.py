@@ -1,4 +1,5 @@
 import vk
+import getpass
 
 
 APP_ID = 6068898
@@ -9,7 +10,7 @@ def get_user_login():
 
 
 def get_user_password():
-    return input('Enter password: ')
+    return getpass.getpass('Enter password: ')
 
 
 def get_online_friends(login, password):
@@ -25,7 +26,7 @@ def get_online_friends(login, password):
 
 def output_friends_to_console(friends_online):
     for friend in friends_online:
-        print(friend['first_name'] + ' ' + friend['last_name'])
+        print('%s %s' % (friend['first_name'], friend['last_name']))
 
 if __name__ == '__main__':
     login = get_user_login()
